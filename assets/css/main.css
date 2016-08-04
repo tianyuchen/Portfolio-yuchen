@@ -3447,10 +3447,9 @@
 				background-size: contain;
 				opacity: 0.65;
 			}
-
 	}
 
-#Intro .more {
+		#Intro .more {
 			-moz-transition: -moz-transform 0.75s ease, opacity 0.75s ease;
 			-webkit-transition: -webkit-transform 0.75s ease, opacity 0.75s ease;
 			-ms-transition: -ms-transform 0.75s ease, opacity 0.75s ease;
