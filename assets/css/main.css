@@ -2211,7 +2211,7 @@
 			input[type="reset"].down.firstpage,
 			.button.down.firstpage,
 			button.down.firstpage {
-				bottom: -6em;
+				bottom: -2em;
 			}
 
 		input[type="button"].firstpage,
