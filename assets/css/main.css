@@ -1,4 +1,4 @@
-@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+/* @import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");*/
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
 
@@ -2434,7 +2434,8 @@
 				background: #f5f6f7;
 			}
 
-			/* Main */
+
+/* Portfolio */
 
 	#port {
 		background-color: #FFFFFF;
@@ -2456,12 +2457,10 @@
 			}
 
 				@media screen and (max-width: 736px) {
-
 					#port > * > .inner {
 						padding: 3em 0 1em 0 ;
 						width: calc(100% - 3em);
 					}
-
 				}
 
 		#port.alt {
@@ -3057,13 +3056,14 @@
 	}
 
 /* Two */
-
+/*
 	#two {
 		background: url("images/overlay.png"), url("../../images/two.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
+*/
 
 /* Work */
 
@@ -3154,21 +3154,21 @@
 				position: relative;
 				z-index: 3;
 			}
-
+			
 			.tiles article h3 {
 				font-size: 2.8em;
-				text-align:left;
+				/* text-align:left; */
 			}
 			
-			.tiles article h3 a:hover {
-					color: inherit !important;
-				}
+				.tiles article h3 a:hover {
+						color: inherit !important;
+					}
 
 			.tiles article p {
 				color: #F5F5F5;
 				font-size: 1.8em;
-				position: 4em;
-				text-align:left;
+				position: 1em;
+				
 			}
 				
 			.tiles article .link.primary {
@@ -3181,6 +3181,7 @@
 				z-index: 4;
 			}
 
+			/* element background-color */
 			.tiles article:before {
 				-moz-transition: opacity 0.5s ease;
 				-webkit-transition: opacity 0.5s ease;
@@ -3191,14 +3192,15 @@
 				display: block;
 				height: 100%;
 				left: 0;
-				opacity: 0.85;
+				opacity: 0;
 				position: absolute;
 				width: 100%;
 				z-index: 2;
 			}
-
+			
+			/* element background-image */
 			.tiles article:after {
-				background-color: rgba(36, 41, 67, 0.25);
+				/* background-color: rgba(36, 41, 67, 0.25); */
 				content: '';
 				display: block;
 				height: 100%;
@@ -3208,10 +3210,11 @@
 				width: 100%;
 				z-index: 1;
 			}
-
+			
+			/* Hover on background-color*/
 			.tiles article:hover:before {
-				opacity: 0;
-			}
+				opacity: 0.75; /* 0.0 - 1.0. The lower value, the more transparent */
+			} 
 
 			.tiles article.is-transitioning {
 				-moz-transform: scale(0.95);
@@ -3230,45 +3233,47 @@
 			}
 			*/
 			
-			.tiles article:nth-child(6n - 5):before {
-				background-color: #6fc3df;
+			.tiles article:before {
+				background-color: black;
 			}
-
-			.tiles article:nth-child(6n - 4):before {
+			
+			/*
+			.tiles article:nth-child(6n - 4):after {
 				background-color: #8d82c4;
 			}
 
-			.tiles article:nth-child(6n - 3):before {
+			.tiles article:nth-child(6n - 3):after {
 				background-color: #ec8d81;
 			}
 
-			.tiles article:nth-child(6n - 2):before {
+			.tiles article:nth-child(6n - 2):after {
 				background-color: #e7b788;
 			}
 
-			.tiles article:nth-child(6n - 1):before {
+			.tiles article:nth-child(6n - 1):after {
 				background-color: #8ea9e8;
 			}
 
-			.tiles article:nth-child(6n):before {
+			.tiles article:nth-child(6n):after {
 				background-color: #87c5a4;
-			}
+			}*/
 
-		@media screen and (max-width: 2000px) {
+		 @media screen and (max-width: 2000px) {
 
 			.tiles article {
 				padding: 4em 3em 2em 3em ; 
-				height: 50vh;
-				max-height: 50em;
+				height: 53vh;
+				max-height: 33em;
 				min-height: 20em;
 			}
 
 		}
+		
 		@media screen and (max-width: 1280px) {
 
 			.tiles article {
 				padding: 4em 3em 2em 3em ; 
-				height: 50vh;
+				height: 52vh;
 				max-height: 30em;
 				min-height: 20em;
 			}
