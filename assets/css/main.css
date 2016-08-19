@@ -3149,15 +3149,20 @@
 			.tiles article .image {
 				display: none;
 			}
-
+			
 			.tiles article header {
 				position: relative;
 				z-index: 3;
+				text-align:left; 
+				left: 100px;
 			}
 			
 			.tiles article h3 {
-				font-size: 2.8em;
-				/* text-align:left; */
+				font-size: 3em;
+				position: relative;
+				display: inline-block;
+				vertical-align: middle; 
+				margin: auto;
 			}
 			
 				.tiles article h3 a:hover {
@@ -3166,9 +3171,11 @@
 
 			.tiles article p {
 				color: #F5F5F5;
-				font-size: 1.8em;
-				position: 1em;
-				
+				font-size: 1.5em;
+				position: relative;
+				vertical-align: middle; 
+				margin: auto;
+				padding-top: 10px;
 			}
 				
 			.tiles article .link.primary {
@@ -3198,6 +3205,11 @@
 				z-index: 2;
 			}
 			
+				/* Hover on background-color*/
+				.tiles article:hover:before {
+					opacity: 0.75; /* 0.0 - 1.0. The lower value, the more transparent */
+				} 
+			
 			/* element background-image */
 			.tiles article:after {
 				/* background-color: rgba(36, 41, 67, 0.25); */
@@ -3207,15 +3219,11 @@
 				left: 0;
 				position: absolute;
 				top: 0;
-				width: 100%;
+				width: 100%; 
 				z-index: 1;
 			}
-			
-			/* Hover on background-color*/
-			.tiles article:hover:before {
-				opacity: 0.75; /* 0.0 - 1.0. The lower value, the more transparent */
-			} 
-
+								
+				
 			.tiles article.is-transitioning {
 				-moz-transform: scale(0.95);
 				-webkit-transform: scale(0.95);
@@ -3227,42 +3235,17 @@
 				filter: blur(0.5em);
 				opacity: 0;
 			}
-
-			/* .tiles article:nth-child(4n - 1), .tiles article:nth-child(4n - 2) {
-				width: 60%;
-			}
-			*/
 			
 			.tiles article:before {
 				background-color: black;
 			}
 			
-			/*
-			.tiles article:nth-child(6n - 4):after {
-				background-color: #8d82c4;
-			}
-
-			.tiles article:nth-child(6n - 3):after {
-				background-color: #ec8d81;
-			}
-
-			.tiles article:nth-child(6n - 2):after {
-				background-color: #e7b788;
-			}
-
-			.tiles article:nth-child(6n - 1):after {
-				background-color: #8ea9e8;
-			}
-
-			.tiles article:nth-child(6n):after {
-				background-color: #87c5a4;
-			}*/
 
 		 @media screen and (max-width: 2000px) {
 
 			.tiles article {
 				padding: 4em 3em 2em 3em ; 
-				height: 53vh;
+				height: 55vh;
 				max-height: 33em;
 				min-height: 20em;
 			}
@@ -3273,7 +3256,7 @@
 
 			.tiles article {
 				padding: 4em 3em 2em 3em ; 
-				height: 52vh;
+				height: 53vh;
 				max-height: 30em;
 				min-height: 20em;
 			}
