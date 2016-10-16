@@ -1,9 +1,3 @@
-/*
-	Big Picture by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 (function($) {
 	
 
@@ -154,7 +148,7 @@
 			});
 		
 			$('a.link').mouseover(function(){
-				$(this).parent().animate({"backgroundSize":"110vh"}, 600)
+				$(this).parent().animate({"backgroundSize":"105vh"}, 600)
 			}).mouseout(function(){
 				$(this).parent().animate({"backgroundSize":"100vh"}, 300)
 			})
