@@ -3046,8 +3046,7 @@
 			opacity: 0;
 		}
 
-	
-/* One */
+		/* One */
 
 	#one {
 		background: url("images/overlay.png"), url("../../images/one.jpg");
@@ -3055,16 +3054,6 @@
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
-
-/* Two */
-/*
-	#two {
-		background: url("images/overlay.png"), url("../../images/two.jpg");
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, center center;
-	}
-*/
 
 /* Work */
 
@@ -3231,7 +3220,6 @@
 				z-index: 1;
 			}
 								
-				
 			.tiles article.is-transitioning {
 				-moz-transform: scale(0.95);
 				-webkit-transform: scale(0.95);
@@ -3314,12 +3302,13 @@
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-image: url("../../images/banner.jpg");
+		/* background-color: #6fc3df; */
+		/* background-image: url("../../images/pic01.jpg"); */
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		padding: 6em 0 2em 0 ;
+		padding: 6em 0 2em 20em; 
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -3330,11 +3319,12 @@
 		margin-bottom: -3.25em;
 		max-height: 32em;
 		min-height: 22em;
-		position: relative;
+		position:relative;
 		top: -3.25em;
 	}
 
-		#banner:after {
+/* The ::after selector inserts something after the content of each selected element(s) */
+	/*	#banner:after {
 			-moz-transition: opacity 2.5s ease;
 			-webkit-transition: opacity 2.5s ease;
 			-ms-transition: opacity 2.5s ease;
@@ -3347,7 +3337,7 @@
 			-webkit-pointer-events: none;
 			-ms-pointer-events: none;
 			pointer-events: none;
-			background-color: #242943;
+			background-color: #242943; 
 			content: '';
 			display: block;
 			height: 100%;
@@ -3358,6 +3348,7 @@
 			width: 100%;
 			z-index: 1;
 		}
+		*/
 
 		#banner h1 {
 			font-size: 3.25em;
@@ -3427,7 +3418,7 @@
 				opacity: 0.75;
 			}
 
-		#banner.style1:after {
+		/* #banner.style1:after {
 			background-color: #6fc3df;
 		}
 
@@ -3450,6 +3441,7 @@
 		#banner.style6:after {
 			background-color: #87c5a4;
 		}
+		*/
 
 		body.is-loading #banner:after {
 			opacity: 1.0;

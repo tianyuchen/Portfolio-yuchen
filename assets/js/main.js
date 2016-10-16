@@ -14,6 +14,7 @@
 
 		var	$window = $(window),
 			$body = $('body'),
+			$wrapper = $('#wrapper'),
 			$header = $('#header'),
 			$all = $body.add($header);
 
@@ -24,6 +25,13 @@
 				window.setTimeout(function() {
 					$body.removeClass('is-loading');
 				}, 0);
+			});
+
+		// Clear transitioning state on unload/hide.
+			$window.on('unload pagehide', function() {
+				window.setTimeout(function() {
+					$('.is-transitioning').removeClass('is-transitioning');
+				}, 250);
 			});
 
 		// Touch mode.
