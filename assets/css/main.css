@@ -3302,29 +3302,35 @@
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		/* background-color: #6fc3df; */
-		/* background-image: url("../../images/pic01.jpg"); */
+
+		/* ---- Pb of modify background-image, can't be modify in Html ---- */
+		/* background-image: url("../../images/Watu/Page1.jpg"); */
+
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		padding: 6em 0 2em 20em; 
+
+		/* ---- Pb of centering the header ---- */
+		padding: 6em 0 2em 24em;
+
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
 		border-bottom: 0 !important;
 		cursor: default;
-		height: 60vh;
-		margin-bottom: -3.25em;
+		height: 100vh; /* The vh unit (viewport height) is equal to 1/100th or 1% of the height of the viewport */
+		/* margin-bottom: -3.25em; 
 		max-height: 32em;
-		min-height: 22em;
+		min-height: 22em; */
 		position:relative;
 		top: -3.25em;
+		margin:0 auto;
 	}
 
-/* The ::after selector inserts something after the content of each selected element(s) */
-	/*	#banner:after {
+		/* The ::after selector inserts something after the content of each selected element(s) */
+		#banner:after {
 			-moz-transition: opacity 2.5s ease;
 			-webkit-transition: opacity 2.5s ease;
 			-ms-transition: opacity 2.5s ease;
@@ -3337,7 +3343,10 @@
 			-webkit-pointer-events: none;
 			-ms-pointer-events: none;
 			pointer-events: none;
-			background-color: #242943; 
+
+			/* Add a grey filter */
+			background-color: rgba(0,0,0,0.5);
+			
 			content: '';
 			display: block;
 			height: 100%;
@@ -3347,11 +3356,13 @@
 			top: 0;
 			width: 100%;
 			z-index: 1;
-		}
-		*/
+
+		}	
 
 		#banner h1 {
-			font-size: 3.25em;
+			color: white;
+			font-size: 88px;
+			text-align:center;
 		}
 
 		#banner > .inner {
@@ -3366,7 +3377,7 @@
 
 			#banner > .inner .image {
 				display: none;
-			}
+			} 
 
 			#banner > .inner header {
 				width: auto;
@@ -3380,6 +3391,7 @@
 						max-width: 100%;
 					}
 
+
 			#banner > .inner .content {
 				display: -moz-flex;
 				display: -webkit-flex;
@@ -3389,7 +3401,14 @@
 				-webkit-align-items: center;
 				-ms-align-items: center;
 				align-items: center;
-				margin: 0 0 2em 0;
+				/* margin: 0 0 2em 0; */
+				color: #F5F5F5;
+				font-size: 1.5em;
+				position: relative;
+				vertical-align: middle; 
+				margin:0 auto;
+				position:center;
+				padding-top: 10px;
 			}
 
 				#banner > .inner .content > * {
@@ -3402,10 +3421,11 @@
 				}
 
 				#banner > .inner .content p {
-					font-size: 0.7em;
-					font-weight: 600;
-					letter-spacing: 0.25em;
-					text-transform: uppercase;
+					font-size: 1.1em;
+					/* font-weight: 600; */
+					letter-spacing: 0.08em;
+					/* text-transform: uppercase; */
+					text-align:center;
 				}
 
 		#banner.major {
@@ -3418,30 +3438,14 @@
 				opacity: 0.75;
 			}
 
-		/* #banner.style1:after {
-			background-color: #6fc3df;
+		/* one solution to background-image pb */
+		#banner.style1 {
+			background-image: url("../../images/Watu/Page1.jpg"); 
 		}
-
-		#banner.style2:after {
-			background-color: #8d82c4;
+		#banner.style2 {
+			background-image: url("../../images/Watu/Page2.jpg"); 
 		}
-
-		#banner.style3:after {
-			background-color: #ec8d81;
-		}
-
-		#banner.style4:after {
-			background-color: #e7b788;
-		}
-
-		#banner.style5:after {
-			background-color: #8ea9e8;
-		}
-
-		#banner.style6:after {
-			background-color: #87c5a4;
-		}
-		*/
+		
 
 		body.is-loading #banner:after {
 			opacity: 1.0;
