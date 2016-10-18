@@ -102,12 +102,12 @@
 						if (x = $img.data('position'))
 							$image.css('background-position', x);
 
-					// Hide original.
+					// Hide original image.
 						$image.hide();
 
 				// Text 	
 				
-					//Hide h3 & p
+					//Mouseover effect: Show/Hide h3 & p
 						$major.hide();
 						$this.mouseover(function() {
 							$major.show();
@@ -141,26 +141,21 @@
 
 							// Redirect.
 								window.setTimeout(function() {
-
 									if ($link.attr('target') == '_blank')
 										window.open(href);
 									else
 										location.href = href;
-
 								}, 500);
-
 						});
-
 					}
-
 			});
-		
+
+			//Mouseover effect: add filter, size bigger 
 			$('a.link').mouseover(function(){
 				$(this).parent().animate({"backgroundSize":"105vh"}, 600)
 			}).mouseout(function(){
 				$(this).parent().animate({"backgroundSize":"100vh"}, 300)
 			})
-		
 		
 		
 		// Section transitions.
