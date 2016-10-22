@@ -129,6 +129,7 @@
 
 						$link.on('click', function(event) {
 
+							/*
 							var href = $link.attr('href');
 
 							// Prevent default.
@@ -146,6 +147,7 @@
 									else
 										location.href = href;
 								}, 500);
+								*/
 						});
 					}
 			});
