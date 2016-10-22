@@ -2319,6 +2319,10 @@
 			padding: 3.5em 2.5em 3.5em 2.5em;
 		}
 
+		.box.style3 {
+			padding: 1.5em 6.5em 3.5em 6.5em;
+		}
+
 /* Main */
 
 	.main {
@@ -3343,10 +3347,8 @@
 			-webkit-pointer-events: none;
 			-ms-pointer-events: none;
 			pointer-events: none;
-
 			/* Add a grey filter */
 			background-color: rgba(0,0,0,0.5);
-			
 			content: '';
 			display: block;
 			height: 100%;
