@@ -3445,7 +3445,19 @@
 			background-image: url("../../images/Watu/Page1.jpg"); 
 		}
 		#banner.style2 {
-			background-image: url("../../images/Watu/Page2.jpg"); 
+			background-image: url("../../images/GWords/banner.jpg"); 
+		}
+		#banner.style3 {
+			background-image: url("../../images/GWords/SignIn.jpg"); 
+		}
+		#banner.style4 {
+			background-image: url("../../images/GWords/SignIn.jpg"); 
+		}
+		#banner.style5 {
+			background-image: url("../../images/GWords/SignIn.jpg"); 
+		}
+		#banner.style6 {
+			background-image: url("../../images/GWords/SignIn.jpg"); 
 		}
 		
 
