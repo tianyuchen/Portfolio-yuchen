@@ -3306,19 +3306,10 @@
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-
-		/* ---- Pb of modify background-image, can't be modify in Html ---- */
-		/* background-image: url("../../images/Watu/Page1.jpg"); */
-
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-
-		/* ---- Pb of centering the header ---- */
-		/* padding: 6em 0 2em 24em; */ 
-		    
-   
 
 		background-attachment: fixed;
 		background-position: center;
@@ -3416,10 +3407,10 @@
 				padding-top: 10px;
 			}
 
-				/*#banner > .inner .content > * {
+				#banner > .inner .content > * {
 					margin-left: 1.5em;
 					margin-bottom: 0;
-				}*/
+				}
 
 				#banner > .inner .content > :first-child {
 					margin-left: 0;
