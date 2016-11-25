@@ -3316,7 +3316,9 @@
 		display: flex;
 
 		/* ---- Pb of centering the header ---- */
-		padding: 6em 0 2em 24em;
+		/* padding: 6em 0 2em 24em; */ 
+		    
+   
 
 		background-attachment: fixed;
 		background-position: center;
@@ -3330,7 +3332,8 @@
 		min-height: 22em; */
 		position:relative;
 		top: -3.25em;
-		margin:0 auto;
+		
+		margin:0 auto; 
 	}
 
 		/* The ::after selector inserts something after the content of each selected element(s) */
@@ -3403,7 +3406,7 @@
 				-webkit-align-items: center;
 				-ms-align-items: center;
 				align-items: center;
-				/* margin: 0 0 2em 0; */
+			margin: 0 0 2em 0; 
 				color: #F5F5F5;
 				font-size: 1.5em;
 				position: relative;
@@ -3413,10 +3416,10 @@
 				padding-top: 10px;
 			}
 
-				#banner > .inner .content > * {
+				/*#banner > .inner .content > * {
 					margin-left: 1.5em;
 					margin-bottom: 0;
-				}
+				}*/
 
 				#banner > .inner .content > :first-child {
 					margin-left: 0;
@@ -3434,6 +3437,7 @@
 			height: 75vh;
 			min-height: 30em;
 			max-height: 50em;
+	
 		}
 
 			#banner.major.alt {
@@ -3443,21 +3447,23 @@
 		/* one solution to background-image pb */
 		#banner.style1 {
 			background-image: url("../../images/Watu/Page1.jpg"); 
+			padding: 6em 0 2em 24em;
 		}
 		#banner.style2 {
 			background-image: url("../../images/GWords/banner.jpg"); 
+			padding: 6em 0 2em 16em;
 		}
 		#banner.style3 {
-			background-image: url("../../images/GWords/SignIn.jpg"); 
+			background-image: url("../../images/.jpg"); 
 		}
 		#banner.style4 {
-			background-image: url("../../images/GWords/SignIn.jpg"); 
+			background-image: url("../../images/.jpg"); 
 		}
 		#banner.style5 {
-			background-image: url("../../images/GWords/SignIn.jpg"); 
+			background-image: url("../../images/.jpg"); 
 		}
 		#banner.style6 {
-			background-image: url("../../images/GWords/SignIn.jpg"); 
+			background-image: url("../../images/.jpg"); 
 		}
 		
 
