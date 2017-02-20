@@ -319,8 +319,9 @@
 				});
 
 	});
-
-	var lastScrollTop = 0;
+	
+	//Hide header when scroll down, show header when scroll up
+	/* var lastScrollTop = 0;
 	$(window).scroll(function(event){
 	   var st = $(this).scrollTop();
 	   if (st > lastScrollTop){
@@ -331,6 +332,6 @@
 	      $('#header').css({'opacity':1})
 	   }
 	   lastScrollTop = st;
-	});
+	});*/
 
 })(jQuery);
